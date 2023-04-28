@@ -1,19 +1,16 @@
 let startButton = document.querySelector(".startButton");
 let timerDisplay = document.querySelector("#timer");
-let quizBox = document.querySelector("#popQuiz;")
-
+let quizBox = document.querySelector("#popQuiz");
+let timerCount;
 //Timer function
 function timer() {
     timerInterval = setInterval(function () {
-        currentTime--;
-        timerDisplay.textContent = "Time: " + currentTime;
-        if (currentTime <= 0) {
+        timerCount--;
+        timerDisplay.textContent = "Time: " + timerCount;
+      
+        if (timerCount <= 0) {
             clearInterval(timerInterval);
             gameOver();
-        }
-        if (currentTime === 0) {
-            clearInterval(timerInterval);
-            loseGame();
         }
     }, 1000);
 }
@@ -21,27 +18,28 @@ function timer() {
 let questions = [
     {
         question: "Inside which HTML element do we put the JavaScript? ",
-        answers: ["js", "script", "javascript", "scripting"],
-        correctAnswer: ""
+        answers: ["<js>", "<script>", "<javascript>", "<scripting>"],
+        correctAnswer: "<script>"
     },
     {
         question: "Where is the correct place to insert a JavaScript?",
         answers: ["The <head> section", "The <body> section", "Both"],
-        correctAnswer: "Both",
+        correctAnswer: "Both"
     },
     {
         question: "What is the correct syntax for referring to an external script called 'xxx.js'?",
         answers: ["<script href='xxx.js'>", "<script name='xxx.js'>", "<script src='xxx.js;>"],
-        correctAnswer: "<script href='xxx.js'>",
+        correctAnswer: "<script href='xxx.js'>"
     },
     {
         question: "How do you write 'Hello World' in an alert box?",
         answers: ["alert('Hello World')", "alertBox('Hello World')", "msg('Hello World')", "msgBox('Hello World')"],
-        correctAnswer: "alert('Hello World')",
+        correctAnswer: "alert('Hello World')"
     }
 ];
 
 function quiz(questions) {
+    timerCount = 60;
     let choices = [];    
     let answers;
     for (var i = 0; i < questions.length; i++) {
@@ -57,6 +55,7 @@ function quiz(questions) {
 
         )
     }
+    timer();
 }
 
 startButton.addEventListener("click", quiz);
