@@ -1,7 +1,8 @@
 let startButton = document.querySelector(".startButton");
 let timerDisplay = document.querySelector("#timer");
 let quizBox = document.querySelector("#popQuiz");
-let timerCount;
+let timerCount = 60;
+
 //Timer function
 function timer() {
     timerInterval = setInterval(function () {
@@ -38,8 +39,7 @@ let questions = [
     }
 ];
 
-function quiz(questions) {
-    timerCount = 60;
+function quiz(questions) {    
     let choices = [];    
     let answers;
     for (var i = 0; i < questions.length; i++) {
