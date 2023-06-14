@@ -40,12 +40,10 @@ body {
     clear: both;
 }
 
-.btn,
 .startButton {
     border: none;
-    background-color: rgb(0, 0, 126);
+    background-color: rgb(5, 84, 255);
     border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px 0px;
     color: hsl(0, 0%, 100%);
     display: inline-block;
     font-size: 22px;
@@ -54,6 +52,10 @@ body {
     padding: 14px 34px;
     text-align: center;
     cursor: pointer;
+}
+
+.startButton:hover {
+    background-color: rgb(0, 0, 126);
 }
 
 p {
@@ -77,11 +79,25 @@ h2 {
 a {
     text-decoration: none;
     color: red;
-
 }
 
+h2,
+div {
+    text-align: center;
+}
 
-/* h2 {
-    font-weight: 100;
-} */
-
+#choices {
+    display: flex;
+    flex-direction: column;
+    color: black    
+  }
+  
+  #choices button {
+    margin-bottom: 10px;
+    background-color: rgb(255, 145, 255);
+    font-weight: bold;
+  }
+  
+  #choices button:hover {
+    background-color: rgb(129, 72, 129);
+  }
