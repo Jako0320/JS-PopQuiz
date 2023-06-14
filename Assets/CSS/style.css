@@ -40,7 +40,8 @@ body {
     clear: both;
 }
 
-.startButton {
+.startButton,
+#save {
     border: none;
     background-color: rgb(5, 84, 255);
     border-radius: 10px;
@@ -54,7 +55,8 @@ body {
     cursor: pointer;
 }
 
-.startButton:hover {
+.startButton:hover,
+#save:hover {
     background-color: rgb(0, 0, 126);
 }
 
@@ -93,11 +95,22 @@ div {
   }
   
   #choices button {
-    margin-bottom: 10px;
+    margin: 16px 500px 16px 500px;
+    padding: 14px 34px;
     background-color: rgb(255, 145, 255);
     font-weight: bold;
+    font-size: 18px;
   }
   
   #choices button:hover {
     background-color: rgb(129, 72, 129);
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  #initials {
+    font-weight: bold;
+    font-size: 18px;
   }
