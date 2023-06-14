@@ -114,3 +114,10 @@ div {
     font-weight: bold;
     font-size: 18px;
   }
+
+  #messageElement {
+    font-weight: bold;
+    font-style: italic;
+    font-size: 32px;    
+    color: red;
+  }

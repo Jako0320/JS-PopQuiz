@@ -75,7 +75,9 @@ function quiz() {
 }
 
 function checkAnswer(choice, answer) {
+    let messageElement = document.getElementById("messageElement");
   if (choice === answer) {
+    messageElement.textContent = "Correct!";
     currentQuestionIndex++;
     if (currentQuestionIndex < questions.length) {
       quiz();
@@ -83,6 +85,7 @@ function checkAnswer(choice, answer) {
       gameOver();
     }
   } else {
+    messageElement.textContent = "Wrong!";
     timerCount -= 10;
     if (timerCount < 0) {
       timerCount = 0;
