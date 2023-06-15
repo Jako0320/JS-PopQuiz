@@ -28,7 +28,7 @@ This application is covered under the None license. [License]( undefined )
 
 
 ## Contributing
-Please use as you see fit
+Please use as you see fit, <a href="https://github.com/Jako0320/JS-PopQuiz">here</a> is the Github repo
 
 ## Testing
 NA

@@ -26,3 +26,10 @@ highScores.forEach(function(scoreEntry) {
   scoreItem.textContent = scoreEntry.initials + " - " + scoreEntry.score;
   highScoresList.appendChild(scoreItem);
 });
+
+let clearHighScoresButton = document.getElementById("clearHighScoresButton");
+clearHighScoresButton.addEventListener("click", clearHighScores);
+
+function clearHighScores() {
+    localStorage.removeItem("highScores");
+}

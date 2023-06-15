@@ -41,7 +41,8 @@ body {
 }
 
 .startButton,
-#save {
+#save,
+#clearHighScoresButton {
     border: none;
     background-color: rgb(5, 84, 255);
     border-radius: 10px;
@@ -56,7 +57,8 @@ body {
 }
 
 .startButton:hover,
-#save:hover {
+#save:hover,
+#clearHighScoresButton:hover {
     background-color: rgb(0, 0, 126);
 }
 
@@ -83,6 +85,7 @@ a {
     color: red;
 }
 
+h1,
 h2,
 div {
     text-align: center;
@@ -106,10 +109,6 @@ div {
     background-color: rgb(129, 72, 129);
   }
 
-  h1 {
-    text-align: center;
-  }
-
   #initials {
     font-weight: bold;
     font-size: 18px;
@@ -120,4 +119,21 @@ div {
     font-style: italic;
     font-size: 32px;    
     color: red;
+  }
+
+  li {
+    margin: 2px 590px 0px 590px;
+    padding: 5px;
+    background-color: rgb(255, 145, 255);
+    font-weight: bold;
+    font-size: 18px;
+  }
+
+  #highScoreTitle {
+    display: block;
+    margin: 16px 530px 16px 558px;
+  }
+
+  #clearHighScoresButton {    
+    margin: 16px 530px 16px 570px;
   }
