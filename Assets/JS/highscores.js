@@ -9,20 +9,20 @@ let initials = localStorage.getItem("initials");
 if (currentScore && initials) {
   let newScore = {
     initials: initials,
-    score: currentScore
+    score: currentScore,
   };
   highScores.push(newScore);
   localStorage.setItem("highScores", JSON.stringify(highScores));
 }
 
 // Sort high scores in descending order
-highScores.sort(function(a, b) {
+highScores.sort(function (a, b) {
   return b.score - a.score;
 });
 
 // Display high scores
-highScores.forEach(function(scoreEntry) {
-  let scoreItem = document.createElement("li");  
+highScores.forEach(function (scoreEntry) {
+  let scoreItem = document.createElement("li");
   scoreItem.textContent = scoreEntry.initials + " - " + scoreEntry.score;
   highScoresList.appendChild(scoreItem);
 });
@@ -31,5 +31,5 @@ let clearHighScoresButton = document.getElementById("clearHighScoresButton");
 clearHighScoresButton.addEventListener("click", clearHighScores);
 
 function clearHighScores() {
-    localStorage.removeItem("highScores");
+  localStorage.removeItem("highScores");
 }

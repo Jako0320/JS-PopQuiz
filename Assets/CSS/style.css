@@ -1,139 +1,145 @@
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html,
 body,
 .title {
-    height: 100%;
-    margin: 0;
-    padding: 0;
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    font-family: sans-serif;
-    background-color: #f9fbfd;
+  font-family: sans-serif;
+  background-color: #f9fbfd;
+}
+
+#highScoresBody {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .title {
-    padding-top: 30px;
-    padding-left: 20px;
-    padding-right: 20px;
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .intro {
-    text-align: center;
-    padding: 20px;
-    padding-top: 0px;
-    color: hsl(206, 17%, 28%);
+  text-align: center;
+  padding: 20px;
+  padding-top: 0px;
+  color: hsl(206, 17%, 28%);
 }
 
 .start {
-    text-align: center;
+  text-align: center;
 }
 
 .start::after {
-    content: " ";
-    display: block;
-    clear: both;
+  content: " ";
+  display: block;
+  clear: both;
 }
 
 .startButton,
 #save,
 #clearHighScoresButton {
-    border: none;
-    background-color: rgb(5, 84, 255);
-    border-radius: 10px;
-    color: hsl(0, 0%, 100%);
-    display: inline-block;
-    font-size: 22px;
-    line-height: 22px;
-    margin: 16px 16px 16px 20px;
-    padding: 14px 34px;
-    text-align: center;
-    cursor: pointer;
+  border: none;
+  background-color: rgb(5, 84, 255);
+  border-radius: 10px;
+  color: hsl(0, 0%, 100%);
+  display: inline-block;
+  font-size: 22px;
+  line-height: 22px;
+  margin: 16px 16px 16px 20px;
+  padding: 14px 34px;
+  text-align: center;
+  cursor: pointer;
 }
 
 .startButton:hover,
 #save:hover,
 #clearHighScoresButton:hover {
-    background-color: rgb(0, 0, 126);
+  background-color: rgb(0, 0, 126);
 }
 
 p {
-    display: inline-block;
-    font-weight: bold;
-    margin: 0px 350px 0px 350px;
+  display: inline-block;
+  font-weight: bold;
+  margin: 0px 350px 0px 350px;
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 a,
 h2 {
-    font-size: 22px;
-    margin-block-start: 10px;
-    margin-block-end: 10px;
+  font-size: 22px;
+  margin-block-start: 10px;
+  margin-block-end: 10px;
 }
 
 a {
-    text-decoration: none;
-    color: red;
+  text-decoration: none;
+  color: red;
 }
 
 h1,
 h2,
 div {
-    text-align: center;
+  text-align: center;
 }
 
 #choices {
-    display: flex;
-    flex-direction: column;
-    color: black    
-  }
-  
-  #choices button {
-    margin: 16px 500px 16px 500px;
-    padding: 14px 34px;
-    background-color: rgb(255, 145, 255);
-    font-weight: bold;
-    font-size: 18px;
-  }
-  
-  #choices button:hover {
-    background-color: rgb(129, 72, 129);
-  }
+  display: flex;
+  flex-direction: column;
+  color: black;
+}
 
-  #initials {
-    font-weight: bold;
-    font-size: 18px;
-  }
+#choices button {
+  margin: 16px 500px 16px 500px;
+  padding: 14px 34px;
+  background-color: rgb(255, 145, 255);
+  font-weight: bold;
+  font-size: 18px;
+}
 
-  #messageElement {
-    font-weight: bold;
-    font-style: italic;
-    font-size: 32px;    
-    color: red;
-  }
+#choices button:hover {
+  background-color: rgb(129, 72, 129);
+}
 
-  li {
-    margin: 2px 590px 0px 590px;
-    padding: 5px;
-    background-color: rgb(255, 145, 255);
-    font-weight: bold;
-    font-size: 18px;
-  }
+#initials {
+  font-weight: bold;
+  font-size: 18px;
+}
 
-  #highScoreTitle {
-    display: block;
-    margin: 16px 530px 16px 558px;
-  }
+#messageElement {
+  font-weight: bold;
+  font-style: italic;
+  font-size: 32px;
+  color: red;
+}
 
-  #clearHighScoresButton {    
-    margin: 16px 530px 16px 570px;
-  }
+li {
+  margin: 2px 590px 0px 590px;
+  padding: 5px;
+  background-color: rgb(255, 145, 255);
+  font-weight: bold;
+  font-size: 18px;
+}
+
+#highScoreTitle {
+  display: block;
+  margin: 16px 530px 16px 558px;
+}
+
+#clearHighScoresButton {
+  margin: 16px 530px 16px 570px;
+}

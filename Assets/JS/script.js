@@ -51,7 +51,7 @@ let questions = [
   },
 ];
 
-function quiz() {  
+function quiz() {
   let currentQuestion = questions[currentQuestionIndex];
 
   let questionElement = document.createElement("h2");
@@ -75,7 +75,7 @@ function quiz() {
 }
 
 function checkAnswer(choice, answer) {
-    let messageElement = document.getElementById("messageElement");
+  let messageElement = document.getElementById("messageElement");
   if (choice === answer) {
     messageElement.textContent = "Correct!";
     currentQuestionIndex++;
